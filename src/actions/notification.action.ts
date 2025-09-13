@@ -1,4 +1,4 @@
-"use server"
+"use server";
 
 import prisma from "@/lib/prisma";
 import { getDbUserId } from "./user.action";
@@ -32,7 +32,7 @@ export async function getNotifications() {
           select: {
             id: true,
             content: true,
-            CreatedAt: true,
+            createdAt: true,
           },
         },
       },

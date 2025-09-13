@@ -1,8 +1,8 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { auth } from "@clerk/nextjs/server";
 import prisma from "@/lib/prisma";
-import {auth} from "@clerk/nextjs/server";
+import { revalidatePath } from "next/cache";
 import { getDbUserId } from "./user.action";
 
 export async function getProfileByUsername(username: string) {
@@ -62,7 +62,7 @@ export async function getUserPosts(userId: string) {
             },
           },
           orderBy: {
-            CreatedAt: "asc",
+            createdAt: "asc",
           },
         },
         likes: {
@@ -120,7 +120,7 @@ export async function getUserLikedPosts(userId: string) {
             },
           },
           orderBy: {
-            CreatedAt: "asc",
+            createdAt: "asc",
           },
         },
         likes: {

@@ -177,7 +177,7 @@ function PostCard({post,dbUserId} : {post:Post; dbUserId: String | null}) {
                         </span>
                         <span className="text-sm text-muted-foreground">·</span>
                         <span className="text-sm text-muted-foreground">
-                          {formatDistanceToNow(new Date(comment.CreatedAt))} ago
+                          {formatDistanceToNow(new Date(comment.createdAt))} ago
                         </span>
                       </div>
                       <p className="text-sm break-words">{comment.content}</p>
