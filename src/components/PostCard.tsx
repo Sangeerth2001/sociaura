@@ -180,7 +180,7 @@ function PostCard({post,dbUserId} : {post:Post; dbUserId: String | null}) {
                           {formatDistanceToNow(new Date(comment.CreatedAt))} ago
                         </span>
                       </div>
-                      <p className="text-sm break-words">{comment.Content}</p>
+                      <p className="text-sm break-words">{comment.content}</p>
                     </div>
                   </div>
                 ))}

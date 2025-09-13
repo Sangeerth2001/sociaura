@@ -31,7 +31,7 @@ export async function getNotifications() {
         comment: {
           select: {
             id: true,
-            Content: true,
+            content: true,
             CreatedAt: true,
           },
         },

@@ -158,7 +158,7 @@ export async function createComment(postId: string, content: string) {
       // Create comment first
       const newComment = await tx.comment.create({
         data: {
-          Content: content,
+          content: content,
           authorId: userId,
           postId,
         },

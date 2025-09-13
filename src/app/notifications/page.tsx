@@ -111,7 +111,7 @@ function NotificationsPage() {
 
                           {notification.type === "COMMENT" && notification.comment && (
                             <div className="text-sm p-2 bg-accent/50 rounded-md">
-                              {notification.comment.Content}
+                              {notification.comment.content}
                             </div>
                           )}
                         </div>
