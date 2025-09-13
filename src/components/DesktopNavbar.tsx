@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
-import ModeToggle from "./modetoogle";
+import ModeToggle from "./ModeToogle";
 
 async function DesktopNavbar() {
   const user = await currentUser();
